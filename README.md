@@ -1,4 +1,3 @@
-Descripción
 Aplicación que encripta textos, así poder intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
 Las "llaves" de encriptación que utilizan son las siguientes:
