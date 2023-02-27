@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Encriptador de Texto | Challenge ONE</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+            <img class="logo" src="imagenes/LogoAlura.png">
+    </header>
+    <main>
+        <div class="container-principal">
+            <section class="encriptar">
+                <textarea class="encriptar__entrada" type="text" placeholder="Ingrese su mensaje"></textarea>
+                <p class="encriptar__aviso">Solo letras minúsculas y sin acentos</p>
+                <div class="encriptar__botones">
+                    <button class="encriptar__boton boton" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="encriptar__boton boton" onclick="btnDesencriptar()">Desencriptar</button>
+                </div> 
+            </section> 
+            <section class="mensaje">
+                <div class="mensaje__mostrar">
+                    <p class="mensaje__salida"></p>
+                    <button class="mensaje__boton boton" onclick="copiar()" >Copiar</button>
+                </div>
+                <div class="mensaje__en-espera">
+                    <div class="mensaje__imagen-container" >
+                        <img class="mensaje__imagen-en-espera" src="imagenes/imgendeespera.png">
+                    </div>
+                                            
+                    <div class="mensaje__texto-de-espera">
+                        <p class="mensaje__texto-de-espera--bold">Ningún mensaje fue encontrado</p>
+                        <p class="mensaje__texto-de-espera--light">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h2>Creado por Anderson Ordoñez | ONE G4 | 2023</h2>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

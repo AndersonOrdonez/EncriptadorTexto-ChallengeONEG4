@@ -1,0 +1,260 @@
+/*Principal o Base*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f5fc;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 5% 1rem 5%;
+}
+
+.logo{
+    margin: 0.5rem 0 1rem 0;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton { 
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1.25rem; 
+    margin: 0.5rem;  
+
+    font-size: 1rem;
+    text-align: center;
+
+    cursor: pointer;
+    color:   #0A3871;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border-color:   #0A3871;
+    border-width: 2px;
+    transform: translateY(-10px);
+}
+
+.boton:hover {
+    background-color: #0A3871;
+    color: #ffffff;
+    border:none;
+    
+}
+
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 1rem;
+    padding-top: 2rem;
+}
+
+/*Section 1*/
+
+.encriptar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 40px;
+}
+
+.encriptar__entrada {
+    width:90%;
+    height: calc(100vh - 200px);
+    margin-bottom: 0.5rem;
+    background-color:  #f3f5fc;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #0A3871;
+
+    border: none;
+    border-style: none;
+}
+
+.encriptar__entrada:focus {
+    outline: none;
+}
+
+.encriptar__aviso {
+    align-self: flex-start;
+    color:#495057;
+    margin: 0.5rem;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.encriptar__botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+
+}
+
+/*Section 2*/
+
+.mensaje{
+    width: 100%;
+}
+
+.mensaje__mostrar {
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 540px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+
+    
+}
+
+.mensaje__salida{
+    font-size: 1.5rem;
+    color: #495057;
+    line-height: 1.75rem;
+}
+
+.mensaje__en-espera{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.mensaje__imagen-container {
+    display: none;
+}
+
+.mensaje__texto-de-espera{
+    display: flex;
+    flex-direction: column;
+    color:#343A40 ;
+}
+
+.mensaje__texto-de-espera--bold{
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+}
+
+.mensaje__texto-de-espera--light{
+    font-size: 1rem;
+}
+
+@media  screen and (min-width:768px) {
+
+    /*Principal o Base*/
+
+    .boton { 
+        font-size: 1.25rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    /*Section 1*/
+
+    .encriptar{
+        height:calc(100vh - 160px)
+    }
+
+    .encriptar__entrada {
+        height: 880px;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 3rem;
+    }
+
+    .encriptar__aviso {
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    .encriptar__botones {
+        flex-direction: row;
+    }
+
+    /*Section 2*/
+
+    .mensaje__salida{
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+
+    .mensaje__texto-de-espera--bold{
+        font-size: 1.75rem;
+
+    }
+    
+    .mensaje__texto-de-espera--light{
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    /*Principal o Base*/
+
+    .container-principal {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .boton {
+        max-width: 320px;
+    }
+
+    /*Section 1*/
+    .encriptar {
+        flex-grow: 1;
+        max-width: 840px;
+    }
+    .encriptar__aviso {
+        align-self:center;
+    }
+    .encriptar__botones {
+        justify-content: center;
+    }
+
+    /*Section 2*/
+
+    .mensaje {
+        max-width: 520px;
+    }
+
+    .mensaje__mostrar {
+        height: calc(100vh - 180px);
+    
+        
+    }
+
+    .mensaje__en-espera {
+        height: calc(100vh - 180px);
+    }
+
+    .mensaje__imagen-container{
+        margin-bottom: 40px;
+    }
+    
+    
+
+    .mensaje__imagen-container {
+        display: block;
+    }
+}
